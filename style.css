@@ -1,0 +1,492 @@
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f4f6f8;
+
+    color: #222;
+
+    line-height: 1.6;
+
+}
+
+
+.contenedor {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+}
+
+
+
+/* ENCABEZADO */
+
+.encabezado {
+
+    background: #8b0000;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+}
+
+.encabezado h1 {
+
+    margin: 0;
+
+    font-size: 40px;
+
+}
+
+.encabezado p {
+
+    margin-top: 8px;
+
+    font-size: 18px;
+
+}
+
+
+
+/* MENÚ */
+
+.menu {
+
+    background: #222;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+}
+
+.menu a {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 16px 20px;
+
+    font-weight: bold;
+
+}
+
+.menu a:hover {
+
+    background: #8b0000;
+
+}
+
+
+
+/* INICIO */
+
+.hero {
+
+    background: white;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+}
+
+.hero h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+/* SECCIONES */
+
+.seccion {
+
+    padding: 60px 20px;
+
+}
+
+.fondo {
+
+    background: #e9ecef;
+
+}
+
+
+
+/* TARJETAS */
+
+.tarjetas {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 30px;
+
+}
+
+
+.tarjeta {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.12);
+
+}
+
+
+.tarjeta h3 {
+
+    margin-top: 0;
+
+    font-size: 23px;
+
+}
+
+
+.tarjeta h4 {
+
+    color: #8b0000;
+
+    margin-bottom: 5px;
+
+}
+
+
+
+/* NIVEL */
+
+.nivel {
+
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    margin: 8px 0 15px;
+
+    background: #ffd966;
+
+}
+
+.nivel.alto {
+
+    background: #ff9999;
+
+}
+
+.nivel.medio {
+
+    background: #ffd966;
+
+}
+
+
+
+/* BOTONES */
+
+button {
+
+    background: #8b0000;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 20px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+
+}
+
+button:hover {
+
+    background: #b30000;
+
+}
+
+
+
+/* BUSCADOR */
+
+.buscador {
+
+    background: white;
+
+    padding: 25px;
+
+    margin-top: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+}
+
+
+.buscador h3 {
+
+    margin-top: 0;
+
+}
+
+
+.buscador input {
+
+    width: 70%;
+
+    max-width: 500px;
+
+    padding: 13px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+}
+
+
+
+/* RESULTADO DE BÚSQUEDA */
+
+#resultadoBusqueda {
+
+    margin-top: 25px;
+
+}
+
+
+.resultado {
+
+    background: white;
+
+    border-left: 6px solid #8b0000;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+}
+
+
+.resultado h3 {
+
+    margin-top: 0;
+
+}
+
+
+.mensaje-busqueda {
+
+    background: #fff3cd;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+}
+
+
+
+/* DATOS DE RIESGOS */
+
+#datosRiesgos {
+
+    margin-top: 30px;
+
+}
+
+
+.riesgo {
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* RECOMENDACIONES */
+
+.recomendaciones {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 30px;
+
+}
+
+
+.recomendaciones > div {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.recomendaciones h3 {
+
+    color: #8b0000;
+
+}
+
+
+
+/* EMERGENCIAS */
+
+.contactos {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 30px;
+
+}
+
+
+.contacto {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.numero {
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    color: #8b0000;
+
+}
+
+
+.nota {
+
+    margin-top: 30px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+}
+
+
+
+/* PIE DE PÁGINA */
+
+footer {
+
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    .encabezado h1 {
+
+        font-size: 30px;
+
+    }
+
+    .menu {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .buscador input {
+
+        width: 100%;
+
+        margin-bottom: 10px;
+
+    }
+
+} 
+/*
+}

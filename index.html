@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ayacucho Alerta</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <div class="contenedor">
+
+            <h1>AYACUCHO ALERTA</h1>
+
+            <p>
+                Sistema informativo para la prevención de riesgos
+            </p>
+
+        </div>
+    </header>
+
+
+    <!-- MENÚ -->
+    <nav class="menu">
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#alertas">Alertas</a>
+
+        <a href="#riesgos">Riesgos</a>
+
+        <a href="#recomendaciones">Recomendaciones</a>
+
+        <a href="#emergencias">Emergencias</a>
+
+    </nav>
+
+
+    <!-- CONTENIDO -->
+    <main>
+
+
+        <!-- INICIO -->
+        <section id="inicio" class="hero">
+
+            <div class="contenedor">
+
+                <h2>
+                    Prevención y seguridad para Ayacucho
+                </h2>
+
+                <p>
+                    Ayacucho Alerta es una página web informativa
+                    diseñada para brindar orientación sobre riesgos
+                    naturales y medidas de prevención.
+                </p>
+
+                <button onclick="mostrarMensaje()">
+                    🚨 MENSAJE DE PREVENCIÓN
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+     <!-- ALERTAS -->
+<section id="alertas" class="seccion">
+
+    <div class="contenedor">
+
+        <h2>🚨 Alertas preventivas</h2>
+
+        <div class="tarjetas">
+
+
+            <!-- SISMOS -->
+            <div class="tarjeta alerta">
+
+                <h3>🌎 Sismo</h3>
+
+                <span class="nivel">
+                    PRECAUCIÓN
+                </span>
+
+                <p>
+                    Mantén la calma, aléjate de ventanas
+                    y ubícate en una zona segura.
+                </p>
+
+                <h4>¿Qué hacer?</h4>
+
+                <ul>
+
+                    <li>
+                        Evitar casonas antiguas.
+                    </li>
+
+                    <li>
+                        Evitar lugares con objetos inestables.
+                    </li>
+
+                    <li>
+                        Alejarse de edificaciones cercanas.
+                    </li>
+
+                    <li>
+                        Mantener la calma y evitar aglomeraciones.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- LLUVIAS INTENSAS -->
+            <div class="tarjeta alerta">
+
+                <h3>🌧️ Lluvias intensas</h3>
+
+                <span class="nivel">
+                    PRECAUCIÓN
+                </span>
+
+                <p>
+                    Evita acercarte a ríos, quebradas
+                    y zonas de posible deslizamiento.
+                </p>
+
+                <h4>¿Qué hacer?</h4>
+
+                <ul>
+
+                    <li>
+                        Evitar canales de agua.
+                    </li>
+
+                    <li>
+                        Proteger las viviendas con sacos de arena
+                        cuando exista riesgo de ingreso de agua.
+                    </li>
+
+                    <li>
+                        Desconectar los equipos eléctricos
+                        si existe riesgo de inundación y hacerlo
+                        únicamente cuando sea seguro.
+                    </li>
+
+                    <li>
+                        Evitar acercarse a zonas inundadas
+                        o donde el agua circule con fuerza.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- HELADAS -->
+            <div class="tarjeta alerta">
+
+                <h3>❄️ Heladas</h3>
+
+                <span class="nivel">
+                    ALERTA
+                </span>
+
+                <p>
+                    Protege a las personas expuestas
+                    a temperaturas muy bajas.
+                </p>
+
+                <h4>¿Qué hacer?</h4>
+
+                <ul>
+
+                    <li>
+                        Vestir ropa abrigadora y calzado cerrado,
+                        cubriendo la cabeza, cuello, manos y rostro.
+                    </li>
+
+                    <li>
+                        Consumir bebidas calientes y alimentos
+                        nutritivos, incluyendo frutas ricas
+                        en vitamina C.
+                    </li>
+
+                    <li>
+                        Buscar refugio en ambientes cálidos
+                        y protegidos del frío.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- DESLIZAMIENTOS -->
+            <div class="tarjeta alerta">
+
+                <h3>⛰️ Deslizamientos</h3>
+
+                <span class="nivel">
+                    ALERTA
+                </span>
+
+                <p>
+                    Aléjate de laderas y zonas inestables
+                    y mantente atento durante lluvias intensas.
+                </p>
+
+                <h4>¿Qué hacer?</h4>
+
+                <ul>
+
+                    <li>
+                        Buscar zonas altas y estables,
+                        alejadas del área de peligro.
+                    </li>
+
+                    <li>
+                        Estar atento ante ruidos,
+                        grietas o movimientos bruscos del terreno.
+                    </li>
+
+                    <li>
+                        No volver a la vivienda en búsqueda
+                        de objetos mientras exista peligro.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- RIESGOS -->
+        <section id="riesgos" class="seccion fondo">
+
+            <div class="contenedor">
+
+                <h2>⚠️ Principales riesgos</h2>
+
+                <p>
+                    Consulta información sobre los principales
+                    riesgos naturales que pueden presentarse
+                    en Ayacucho.
+                </p>
+
+
+                <!-- BOTÓN DATOS -->
+                <button onclick="mostrarRiesgos()">
+                    🔎 VER DATOS DE LOS RIESGOS
+                </button>
+
+
+                <!-- BUSCADOR -->
+                <div class="buscador">
+
+                    <h3>🔍 Buscar un riesgo</h3>
+
+                    <input
+                        type="text"
+                        id="buscarRiesgo"
+                        placeholder="Ejemplo: sismos"
+                    >
+
+                    <button onclick="buscarRiesgo()">
+                        🔍 BUSCAR
+                    </button>
+
+                </div>
+
+
+                <!-- RESULTADO DEL BUSCADOR -->
+                <div id="resultadoBusqueda"></div>
+
+
+                <!-- DATOS DE LOS RIESGOS -->
+                <div id="datosRiesgos" style="display:none;">
+
+
+                    <!-- SISMOS -->
+                    <div class="tarjeta riesgo">
+
+                        <h3>🌎 Sismos</h3>
+
+                        <span class="nivel alto">
+                            🚨 Nivel: ALTO
+                        </span>
+
+                        <h4>¿Qué es?</h4>
+
+                        <p>
+                            Es un movimiento repentino de la tierra
+                            que puede causar daños en viviendas,
+                            edificios, carreteras y otros lugares.
+                        </p>
+
+
+                        <h4>¿Cómo ocurre?</h4>
+
+                        <p>
+                            La energía acumulada en el interior
+                            de la Tierra se libera y provoca
+                            el movimiento del suelo.
+                        </p>
+
+
+                        <h4>¿Por qué ocurre?</h4>
+
+                        <p>
+                            Principalmente por el movimiento
+                            y roce de las placas tectónicas.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- LLUVIAS -->
+                    <div class="tarjeta riesgo">
+
+                        <h3>🌧️ Lluvias intensas</h3>
+
+                        <span class="nivel medio">
+                            🚨 Nivel: MEDIO
+                        </span>
+
+                        <h4>¿Qué es?</h4>
+
+                        <p>
+                            Son precipitaciones fuertes o
+                            prolongadas que generan grandes
+                            cantidades de agua.
+                        </p>
+
+
+                        <h4>¿Cómo ocurre?</h4>
+
+                        <p>
+                            La humedad se acumula en las nubes
+                            y posteriormente cae en forma de
+                            lluvia durante un período intenso.
+                        </p>
+
+
+                        <h4>¿Por qué ocurre?</h4>
+
+                        <p>
+                            Por determinadas condiciones
+                            atmosféricas que concentran mucha
+                            humedad y producen precipitaciones
+                            fuertes.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- HELADAS -->
+                    <div class="tarjeta riesgo">
+
+                        <h3>❄️ Heladas</h3>
+
+                        <span class="nivel medio">
+                            🚨 Nivel: MEDIO
+                        </span>
+
+                        <h4>¿Qué es?</h4>
+
+                        <p>
+                            Es un fenómeno en el que la temperatura
+                            desciende considerablemente, principalmente
+                            durante la noche y madrugada.
+                        </p>
+
+
+                        <h4>¿Cómo ocurre?</h4>
+
+                        <p>
+                            La superficie terrestre pierde calor
+                            y el aire cercano se enfría demasiado.
+                        </p>
+
+
+                        <h4>¿Por qué ocurre?</h4>
+
+                        <p>
+                            Es más frecuente en zonas altas,
+                            especialmente durante noches despejadas
+                            y con poca humedad.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- DESLIZAMIENTOS -->
+                    <div class="tarjeta riesgo">
+
+                        <h3>⛰️ Deslizamientos</h3>
+
+                        <span class="nivel alto">
+                            🚨 Nivel: ALTO
+                        </span>
+
+                        <h4>¿Qué es?</h4>
+
+                        <p>
+                            Es el desplazamiento de tierra,
+                            piedras o rocas por una pendiente.
+                        </p>
+
+
+                        <h4>¿Cómo ocurre?</h4>
+
+                        <p>
+                            El suelo pierde estabilidad y comienza
+                            a desplazarse hacia zonas más bajas.
+                        </p>
+
+
+                        <h4>¿Por qué ocurre?</h4>
+
+                        <p>
+                            Principalmente por lluvias que saturan
+                            el suelo, aunque también pueden influir
+                            la pendiente y las características
+                            del terreno.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RECOMENDACIONES -->
+        <section id="recomendaciones" class="seccion">
+
+            <div class="contenedor">
+
+                <h2>✅ Recomendaciones</h2>
+
+                <div class="recomendaciones">
+
+
+                    <div>
+
+                        <h3>Antes</h3>
+
+                        <ul>
+
+                            <li>
+                                Prepara una mochila de emergencia.
+                            </li>
+
+                            <li>
+                                Identifica zonas seguras.
+                            </li>
+
+                            <li>
+                                Conoce las rutas de evacuación.
+                            </li>
+
+                            <li>
+                                Participa en simulacros.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <h3>Durante</h3>
+
+                        <ul>
+
+                            <li>
+                                Mantén la calma.
+                            </li>
+
+                            <li>
+                                Aléjate de lugares peligrosos.
+                            </li>
+
+                            <li>
+                                Sigue las indicaciones oficiales.
+                            </li>
+
+                            <li>
+                                Ayuda a personas vulnerables.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <h3>Después</h3>
+
+                        <ul>
+
+                            <li>
+                                Verifica el estado de las personas.
+                            </li>
+
+                            <li>
+                                No ingreses a lugares inseguros.
+                            </li>
+
+                            <li>
+                                Informa sobre daños.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- EMERGENCIAS -->
+        <section id="emergencias" class="seccion fondo">
+
+            <div class="contenedor">
+
+                <h2>📞 Contactos de emergencia</h2>
+
+                <div class="contactos">
+
+
+                    <div class="contacto">
+
+                        <h3>🚓 Policía</h3>
+
+                        <p class="numero">
+                            105
+                        </p>
+
+                        <p>
+                            Número para solicitar ayuda
+                            de la Policía Nacional del Perú
+                            ante situaciones de emergencia.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="contacto">
+
+                        <h3>🚒 Bomberos</h3>
+
+                        <p class="numero">
+                            116
+                        </p>
+
+                        <p>
+                            Puedes comunicarte para solicitar
+                            asistencia ante incendios, accidentes
+                            y otras emergencias.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="contacto">
+
+                        <h3>🚨 Emergencias</h3>
+
+                        <p class="numero">
+                            911
+                        </p>
+
+                        <p>
+                            Número de atención de emergencias
+                            utilizado para solicitar ayuda
+                            cuando existe un peligro inmediato.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="contacto">
+
+                        <h3>📱 Mensajes de emergencia</h3>
+
+                        <p class="numero">
+                            119
+                        </p>
+
+                        <p>
+                            Servicio que permite dejar mensajes
+                            de voz para facilitar la comunicación
+                            con familiares y amigos durante
+                            una emergencia.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <p class="nota">
+
+                    Esta página es un prototipo educativo.
+                    Para situaciones reales deben utilizarse
+                    los canales oficiales de emergencia.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            Ayacucho Alerta © 2026 |
+            Proyecto FENCYT
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
